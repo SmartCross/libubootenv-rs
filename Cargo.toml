@@ -6,12 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-nix = "0.25.0"
-libc = "0.2.132"
+nix = "^0.25"
+libc = "^0.2"
 
 [build-dependencies]
-pkg-config = "0.3.25"
-bindgen = "0.53.1"
+pkg-config = "^0.3"
+bindgen = "^0.55"
 
 [lib]
 name = "libubootenv_rs"
