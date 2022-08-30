@@ -1,0 +1,22 @@
+[package]
+name = "libubootenv-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+nix = "0.25.0"
+libc = "0.2.132"
+
+[build-dependencies]
+pkg-config = "0.3.25"
+bindgen = "0.53.1"
+
+[lib]
+name = "libubootenv_rs"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ubootenv-rs"
+path = "src/bin/bin.rs"
